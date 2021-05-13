@@ -21,9 +21,7 @@
 title: Horiid's personal Website
 email: currently not available
 description: >- # this means to ignore newlines until "baseurl:"
-  A virtualspace of a not super-hyped engineer,
-  I keep trying to find/develop something good,
-  as good as Copernican Revolution.
+  I keep trying to find/develop something as good as Copernican Revolution.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://horiid.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
