@@ -6,7 +6,7 @@ Hi, I recently revived my good ol' gear ThinkPad X220 and tuned it to the comple
 
 ---
 ## Coreboot Requirements
-All you have to do is flash the BIOS chip(ROM) on the motherboard with Raspberry Pi. Yes, to do that, you need some tools and anatomies of laptop.
+All you have to do is flash the BIOS chip(ROM) on the motherboard with Raspberry Pi. Yes, to do that, you need some tools and anatomize your laptop.
 
 ### Laptop Computer
 I recommend ThinkPad series since you can find a few documents associated with reviving them with Coreboot on the internet.
@@ -21,9 +21,9 @@ If you're trying with ThinkPad X220, Use a SOIC 8-pin IC test clip. You can find
 ### Female-Female Jumpers
 Connect those wires to the clip and raspi GPIO.
 
----
 ## Setting up the Raspberry Pi
-launch the raspberry pi, and then do the followings:
+Launch raspberry pi, and then do the followings:
+
 ### Update packages index
 ~~~
 sudo apt update
@@ -56,11 +56,9 @@ git clone https://github.com/corna/me_cleaner ~/me_cleaner
 ### Rasberry Pi Pinout
 It depends on which ROM you're trying to flash, so search the pinout for your computer accordingly on the web.
 
----
 ## Flashrom
-
 ### Set alias
-Note that quotations after equal(=) is "back quote",  which makes shell to interpret string in the quoted section as a command.
+Note that quotes after equal(=) is "back quote",  which makes shell to interpret string in the quoted section as a command.
 ~~~ 
 alias fr=`sudo flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=1024`
 ~~~
@@ -82,7 +80,7 @@ fr -c "your chip name" -r backup04.bin
 ~~~
 
 ### Compare checksums
-If checksums are not the same, it means connection is not secure. Make sure the clip is stable. If they are the same, store backup01.bin at a safe location. One or more backups would be better since __the computer may not be able to boot after flashing the chip__.
+If checksums are not the same, it means connection is not secure. Make sure the clip is stable. If they are the same, store backup01.bin at a safe location. One or more backups would be better since __the computer may not be able to boot after flashing.__
 ~~~
 md5sum backup01.bin backup02.bin backup03.bin backup04.bin
 ~~~
@@ -107,10 +105,12 @@ cp path/to/blobs/flashregion_0_flashdescriptor.bin descriptor.bin
 cp path/to/blobs/flashregion_2_intel_me.bin me.bin
 cp path/to/blobs/flashregion_3_gbe.bin gbe.bin
 ~~~
----
+
 ## Configure & build Coreboot
 ### Configuration
 SeaBIOS may need a VGABIOS firmware, so follow the guide [here](https://www.coreboot.org/VGA_support) to extract it just in case (Optional).
+
+Run "make menuconfig" to launch coreboot configuration menu.
 ~~~
 make menuconfig
 
@@ -158,27 +158,29 @@ make crossgcc-i386 CPUS=4
 make iasl
 make
 ~~~
----
+
 ## Write Coreboot to the chip
 Let's write coreboot to the chip. Make up your mind.
 ~~~
 cd ~/coreboot/build
 fr -c "your chip name" -w coreboot.rom
 ~~~
-Be noticed that the last step of the command will verify the chip and if it's successful, the final line would be like this:
+Be noted that the last step of the command will verify the chip and if it's successful, the final line would be like this:
 ~~~
 Verifying flash... VERIFIED.
 ~~~
+
 * If suceessful, shutdown the Raspberry Pi before removing the test clip.
 * If failed, make sure coneection is fine and flash again.
-* If still failed, rebuild coreboot and flash again.
-* If still not, give up and flash your backup01.bin. This is why we prepared the backup.
----
+* If still failed, revise config, rebuild coreboot and flash again.
+* If still failed and you get too worried, give up and flash backup0X.bin. This is why we prepared backups.
 
+
+---
 ## Install Linux
 In this section, I'm going to introduce how to download/install Linux to your computer. In this time we are creating LiveUSB, which enables to launch OS from USB. It also makes it easy to install OS to actual device.
 
-*Aside from Coreboot procedure, you can do this section alone if you simply want to install Linux to your computer.*
+*Aside from Coreboot procedure, you can do this section independently if you simply want to install Linux to your computer.*
 ### Creating LiveUSB
 Download [UNetbootin](https://unetbootin.github.io). It loads distributions either by downloading ISO image for you, but you can independently download/select ISO images. 
 ### Boot LiveUSB and install Linux
