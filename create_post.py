@@ -28,6 +28,7 @@ posted_time = datetime.datetime.now().strftime('%Y-%m-%d-')
 with open(args.filename, 'r') as f:
     content = f.read()
 post_name = args.title if args.title is not None else args.filename.split('/')[1][:-3]
+
 new_post = "_posts/" + posted_time + post_name + ".md"
 
 print(args)
