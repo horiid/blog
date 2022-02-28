@@ -2,7 +2,7 @@
 layout : post
 ---
 #### disclaimer: 
- - I'm non-native, so the following content mayhave incorrect grammar or misspellings. Thank you for your understanding.
+ - I'm non-native, so the following content may have incorrect grammar or misspellings. Thank you for your understanding.
  - I only spread the idea of CTI here as a countermeasure against cyberthreats and for my memo for study, hence, shall not be liable for any damages incurred by others as a result of using content.
 
 ## Introduction to Cyber Threat Intelligence
