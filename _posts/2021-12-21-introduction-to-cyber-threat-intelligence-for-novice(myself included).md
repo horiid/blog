@@ -2,11 +2,11 @@
 layout : post
 ---
 #### disclaimer: 
- - I'm non-native, so the following content may have incorrect grammar or misspellings. Thank you for your understanding.
- - I only spread the idea of CTI here as a countermeasure against cyberthreats and for my memo for study, hence, shall not be liable for any damages incurred by others as a result of using content.
+ - I'm non-native, so the following content may have incorrect grammars or misspellings. Thank you for your understanding.
+ - I only spread the idea of CTI here as a countermeasure against cyberthreats and a memo for study, hence, shall not be liable for any damages incurred by others as a result of using content.
 
 ## Introduction to Cyber Threat Intelligence
-Cyber Threat Intelligence has already been an essential idea for cybersecurity among threat analysts overseas especially in the US, since the idea was  came out of  American intelligence specialists, such as threat analysts worked in Military or Intelligence Agencies. The premises of CTI is "Actionable, or it's Useless/Meaningless". Good CTI urges actions to those who utilizes them, otherwise it's regarded as just an information, not intelligence. And that pretty much expresses the biggest difference between "Information" and "Intelligence", that information is simply a chunk of facts or data and itself won't do anything if we don't process them to a handy format for our following actions.
+Cyber Threat Intelligence has already been an essential idea for cybersecurity among threat analysts overseas especially in the US, since the idea was  came out of  American intelligence specialists, such as threat analysts worked in Military or Intelligence Agencies. The premises of CTI is "Actionable, otherwise it's no good". Good CTI urges proper actions to those who utilizes them, otherwise it's regarded as just an information, not intelligence. And that pretty much expresses the biggest difference between "Information" and "Intelligence", that information is simply a chunk of facts or data and itself won't do anything if we don't process them to a handy format for our actions we take.
 
 ## What exactly can be regarded as CTI?
 CTI is relatively a new concept in cybersecurity and so many security vendors and national intelligences are still groping the better way to leverage them. However, there are some useful frameworks to categorize information which I'm about to introduce to you.
