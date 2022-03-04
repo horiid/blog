@@ -19,7 +19,7 @@ In Cybersecurity, we can use these open-source information for analyzing cyberth
     - Blocklists
         - [Blocklist.de](https://www.blocklist.de/) - Public blocklist
         - [Spamhaus](https://www.spamhaus.org/) - Public blocklist
-        - [WhatIsMyIP](https://www.whatismyip.com/) - Public blocklist
+        - [Cisco Talos](https://talosintelligence.com/reputation_center/) - Public blocklist but also shows artifacts such as geolocation, owner details, etc
     - Reputations
         - [AlienVault](https://otx.alienvault.com/) - reps and related info
         - [VirusTotal](https://virustotal.com/) - Domain, URL, IP rep
@@ -29,7 +29,7 @@ In Cybersecurity, we can use these open-source information for analyzing cyberth
         - [AbuseIPDB](https://www.abuseipdb.com/) - IP rep
         - [MXtoolbox](https://mxtoolbox.com/) - Mail rep
 
-These are not particurally for cybersecurity purpose, but still are useful sources:
+These are not particurally for cybersecurity purpose, but still useful sources:
  - WHOIS
     - Ownership of IP address
     - Geolocation of IP address
