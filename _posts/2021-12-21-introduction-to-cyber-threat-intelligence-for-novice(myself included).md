@@ -3,13 +3,14 @@ layout : post
 ---
 #### disclaimer: 
  - I'm non-native, so the following content may have incorrect grammars or misspellings. Thank you for your understanding.
- - I only spread the idea of CTI here as a countermeasure against cyberthreats and a memo for study, hence, shall not be liable for any damages incurred by others as a result of using content.
 
 ## Introduction to Cyber Threat Intelligence
-Cyber Threat Intelligence has already been an essential idea for cybersecurity among threat analysts overseas especially in the US, since the idea was  came out of  American intelligence specialists, such as threat analysts worked in Military or Intelligence Agencies. The premises of CTI is "Actionable, otherwise it's no good". Good CTI urges proper actions to those who utilizes them, otherwise it's regarded as just an information, not intelligence. And that pretty much expresses the biggest difference between "Information" and "Intelligence", that information is simply a chunk of facts or data and itself won't do anything if we don't process them to a handy format for our actions we take.
+Cyber Threat Intelligence has already been an essential concept for cybersecurity among threat analysts overseas especially in the US, since the idea was came out of American intelligence specialists, such as threat analysts worked in Military or Intelligence Agencies. The basis of CTI is "Actionable, otherwise it's no good". Good CTI urges proper actions to those who utilizes them, otherwise it's regarded as just an information, not intelligence. And that pretty much expresses the biggest difference between "Information" and "Intelligence", that information is simply a chunk of facts or data and itself won't do anything if we don't process them to a handy format for our actions we take. 
+
+**Personally, I think we can regard "Intelligence" as "Information + Analysis -> Course of Action".**
 
 ## What exactly can be regarded as CTI?
-CTI is relatively a new concept in cybersecurity and so many security vendors and national intelligences are still groping the better way to leverage them. However, there are some useful frameworks to categorize information which I'm about to introduce to you.
+CTI is relatively a new concept in cybersecurity and many security vendors and national intelligences are still groping the better way to utilize them. However, there are some useful frameworks to categorize information which I'm about to introduce to you.
 ### Indicator of Compromise (IoC)
 You may have heard of Indicator of Compromise (IoC) because it's a very common term in cybersecurity. But **any** information about cyberthreats can be utilized. IoCs basically mean those: 
  - **Network Indicators**
@@ -37,29 +38,28 @@ Pyramid of Pain is a framework to categorize information by the amount of pains 
 
 ![pyramid-of-pain](https://media-exp1.licdn.com/dms/image/C4D12AQHs72730iDByw/article-inline_image-shrink_1000_1488/0/1615011967281?e=1651708800&v=beta&t=53Uli7f7G42xum2C8kYKY-X9nKEoAX2QrUD7W86NoeA)
 
-Most of IoCs I described above fit in to lower layers of the pyramid such as hash values, IP addresses, and domains. 
+Most of IoCs I described above are categorized to lower layers of the pyramid such as hash values, IP addresses, and domains. To gain an intelligence of Network/Host Artifacts or more higher layers, it is required to analyze in detail: such as network flow patterns, malware attributions, and infrastructure of attackers.
  - ### Network and Host Artifacts: ***Annoying***
-Knowing about the activity that diffirentiates malicious activities from legit ones. These exactly are URL patterns, C&C information, registry objects, files, directories, etc. Think of yourself became as an attacker and your targets using these information to deny/detect malicious activities or intrusions. It's annoying for sure, isn't it?
+Knowing about the activity that diffirentiates malicious activities from legit ones. These exactly are URL patterns, C&C information, registry objects, files, directories, etc. Think of yourself became as an attacker and your targets using these information to deny/detect malicious activities or intrusions. It's a pain for sure, isn't it?
  - ### Tools: ***Challenging***
 Cyberattacks get gradually as sophisticated as the tools they use. These tools are such as follow: vulnerability scanners, malicious code generators, brute force password crackers, C&C, etc. Identifying and denying the abuse of those tools may significantly decrease the successful possibilities of cyberattacks.
 
  - ### Tactics, Techniques and Procedures (TTPs): ***Tough!***
-TTP stands for "Tactics, Techniques and Procedures". This expresses the attackers' methodology, meaning their methods on delivery, installation, command & control, and execution of a cyberattack included with information of specific techniques they use. When you detect foes compromising your territories at this level, you will directly know what to do for shutting them out and there will be a very low chance of succeed of cyberattacks.
+TTP stands for "Tactics, Techniques and Procedures". It means **threat vectors, meaning their methods on delivery, installation, command & control, and execution of a cyberattack included with information of specific techniques they use**. When you detect foes compromising your territories at this level, you will directly know what to do for shutting them out and there will be a very low chance of succeed of cyberattacks.
 
 ### Intelligence Cycle
-Intelligence cycle is a methodology for utilizing CTI and consists of six phases. This cycle model eventually focuses on understanding the decision-making processes of everyone concerned. What you see below is the Intelligence Cycle - some experts insert "Feedback" phase after "Dissemination" phase but we don't mention here.
+Intelligence cycle is a framework for utilizing CTI which consists of six phases. This cycle model eventually focuses on understanding the decision-making processes of everyone concerned. What you see below is the Intelligence Cycle - some experts insert "Feedback" phase after "Dissemination" phase but we don't mention it here.
 ![intelligence-cycle](https://upload.wikimedia.org/wikipedia/commons/5/58/The_Intelligence_Process_JP_2-0.png)
  - ### Direction
- The first phase is Direction phase. In this phase we formulate to which questions we answer. The questions may be brought from external sources, intelligence team, and  sometimes it's created by them and stakeholders together (The phase is sometimes called RFI: Request For Information). The ideal closing of this phase is to set a simple and clear question that stakeholders can leverage.
+ The first phase is Direction phase. In this phase we formulate to which questions we answer. The questions may be brought from external sources, intelligence team, and sometimes it's created by them and stakeholders together (The phase is sometimes called RFI: Request For Information). The ideal closing of this phase is to set a simple and clear question that stakeholders can utilize.
  - ### Collection
- The following phase is collecting every data needed to answer the question we set earlier. In this phase we must focus on only to collect data, not analyzing them because it's hard to know which of them is actually informative, so building a function to collect and covers various data is essential. Keep in mind that it is not done one-off but repeatedly to gather further information utilizing those we get in the previous phase.
+ The following phase is for collecting every data needed to answer the question we set earlier. In this phase we must focus on only in collection, not analysis because it's hard to know which of them is actually informative, so building a mechanism to collect and covers various data is essential. Keep in mind that it is not a one-off but repeatedly executed to obtain further information.
  - ### Processing
- Data we gathered in the previous phase is not always well-formatted(Natural Languages, etc) or formed in the same format, so we need to process those to a uniformed data format. Regularization to uniformed format is essential for analysis, especially if you want to make those machine-readable for the purposes of visualization, sharing, etc.
+ Data we gathered in the previous phase is not always well-formatted(natural languages, pdf, etc) or formed in the same format. Thus, we need to process those to a uniformed data format: Regularization. It is essential for analysis, especially if you want to make those machine-readable for the purposes of visualization, sharing, or dissemination.
  - ### Analysis
- Analysis Phase focuses on to answer the question we set in Direction Phase. The answers aren't always be solid or can't be determined with dualism of yes/no. But it's important to clarify what kind of information is lacking and why the questions are unanswerable. 
- **Every Intelligence Analysis must be done by humans.** In other words, introducing an automated process can be an implementation of Processing, but not Analysis.
+ Analysis Phase focuses on to answer the question we set in Direction Phase. The answers aren't always be solid or can't be determined with yes/no. But it's important to clarify what kind of information is lacking and why the questions are unanswerable. And there is one thing to be keep minded: **Every Intelligence Analysis must be done by actual people.** In other words, introducing an automated process can be an implementation of Processing, but it's not Analysis.
  - ### Dissemination
-Being in this phase means we already have created intelligence. However, intelligence reports need to be disseminated to stakeholders who utilize them, otherwise they have no value more than bunch of sentences. **We should make sure of sharing intelligence reports in the most convenient format with related stakeholders**. In simple words, we need to think to whom are you going to share this report with. They might be management, or externals. You need to format it in the most favorable style for them.
+We should already have created intelligence in this phase. However, intelligence reports need to be disseminated to stakeholders who utilize them, otherwise they have no value more than bunch of sentences. **We should make sure of sharing intelligence reports in the most convenient format with related stakeholders**. In simple words, we need to think to whom are you going to share this report with. They might be the management, or externals. You need to format it in the most favorable style for them.
 
 ## Adopting to Incident Response
 Running Incident Response(IR) according to CTI-driven frameworks is a great methodology to properly respond to cyberthreats both in normal and emergency situations. These are the most common and known framework for doing this: The former is called **OODA Loop** of which you may already have heard, and the latter is called **F3EAD**, the Incident Response model with Intelligence Cycle processes combined.
@@ -102,6 +102,6 @@ F3EAD is a combination of Intelligence Cycle and Incident Response. The name is 
         - Tactical
             - Incident Response Team, which uses IoCs and summarized TTPs.
         - Strategic
-            - Managements who invest the security team. They tend to focus on the highly generalized TTPs and actual campaigns.
+            - The management who invest the security team. They tend to focus on generalized TTPs and summarized campaigns.
         - Third Party
             - Many organizations are in the Threat Information sharing group in any forms. Each organization needs to make the rules or standards on how to work with the group.
