@@ -10,7 +10,7 @@ Cyber Threat Intelligence has already been an essential concept for cybersecurit
 **Personally, I think we can regard "Intelligence" as "Information + Analysis -> Course of Action".**
 
 ## What exactly can be regarded as CTI?
-CTI is relatively a new concept in cybersecurity and many security vendors and national intelligences are still groping the better way to utilize them. However, there are some useful frameworks to categorize information which I'm about to introduce to you.
+CTI is relatively a new concept in cybersecurity and many security professionals have looked for the best way to utilize it. As an outcome of their endeavors, there are some useful frameworks to categorize information which I'm about to introduce to you.
 ### Indicator of Compromise (IoC)
 You may have heard of Indicator of Compromise (IoC) because it's a very common term in cybersecurity. But **any** information about cyberthreats can be utilized. IoCs basically mean those: 
  - **Network Indicators**
@@ -38,14 +38,14 @@ Pyramid of Pain is a framework to categorize information by the amount of pains 
 
 ![pyramid-of-pain](https://media-exp1.licdn.com/dms/image/C4D12AQHs72730iDByw/article-inline_image-shrink_1000_1488/0/1615011967281?e=1651708800&v=beta&t=53Uli7f7G42xum2C8kYKY-X9nKEoAX2QrUD7W86NoeA)
 
-Most of IoCs I described above are categorized to lower layers of the pyramid such as hash values, IP addresses, and domains. To gain an intelligence of Network/Host Artifacts or more higher layers, it is required to analyze in detail: such as network flow patterns, malware attributions, and infrastructure of attackers.
+Most of IoCs I described above such as hash values, IP addresses, and domains are categorized to lower layers of the pyramid. To gain an intelligence of Network/Host Artifacts or more higher layers, it is required to analyze in detail: such as network flow patterns, malware attributions, and eventually, an infrastructure of attackers.
  - ### Network and Host Artifacts: ***Annoying***
 Knowing about the activity that diffirentiates malicious activities from legit ones. These exactly are URL patterns, C&C information, registry objects, files, directories, etc. Think of yourself became as an attacker and your targets using these information to deny/detect malicious activities or intrusions. It's a pain for sure, isn't it?
  - ### Tools: ***Challenging***
 Cyberattacks get gradually as sophisticated as the tools they use. These tools are such as follow: vulnerability scanners, malicious code generators, brute force password crackers, C&C, etc. Identifying and denying the abuse of those tools may significantly decrease the successful possibilities of cyberattacks.
 
  - ### Tactics, Techniques and Procedures (TTPs): ***Tough!***
-TTP stands for "Tactics, Techniques and Procedures". It means **threat vectors, meaning their methods on delivery, installation, command & control, and execution of a cyberattack included with information of specific techniques they use**. When you detect foes compromising your territories at this level, you will directly know what to do for shutting them out and there will be a very low chance of succeed of cyberattacks.
+TTP stands for "Tactics, Techniques and Procedures". It means **threat vectors, meaning their methods on delivery, installation, command & control, and execution of a cyberattack included with information of specific techniques they use**. When you detect foes compromising your territories at this level, you will directly know what to do for shutting them out and there will be a very low chance of success for attackers.
 
 ### Intelligence Cycle
 Intelligence cycle is a framework for utilizing CTI which consists of six phases. This cycle model eventually focuses on understanding the decision-making processes of everyone concerned. What you see below is the Intelligence Cycle - some experts insert "Feedback" phase after "Dissemination" phase but we don't mention it here.
