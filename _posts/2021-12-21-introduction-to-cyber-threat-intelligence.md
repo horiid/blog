@@ -1,7 +1,7 @@
 ---
 layout : post
 ---
-#### disclaimer: 
+#### before reading the article: 
  - I'm non-native, so the following content may have incorrect grammars or misspellings. Thank you for your understanding.
 
 ## Introduction to Cyber Threat Intelligence

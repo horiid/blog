@@ -2,20 +2,20 @@
 layout : post
 ---
 ## Useful Tools for OSINT
-There are many OSINT tools on market, and that's what I'm about to tell on this post.
+There are many OSINT tools on market, but first of all, what is OSINT? This post is for those(me included) who want to utilize open-source information for cybersecurity.
 
 ### What's OSINT?
-**OSINT: Open Source INTelligence** is a methodology for collecting/analyzing information we can get in public. The information we get from this method is literally anything in public, such as:
+**OSINT: Open Source INTelligence** is a methodology for collecting/analyzing information we can get from the public. The information we get from this method is literally anything in public, such as:
  - Media Coverage
- - Whitepapers
- - Social Media(Twitter, Facebook, etc)
+ - White papers
+ - Social media(Twitter, Facebook, etc)
  - Websites
  - Journals
  - Company Publications
  - Radio Channels
 
-In Cybersecurity, we can use these open-source information for analyzing cyberthreats. Here's a list of Public Tools I've known well so far:
- - Public OSINT Tools(Only part of those)
+In cybersecurity, we can use these open-source information for analyzing cyberthreats. Here's a list of Public Tools I've known well so far:
+ - Public OSINT Tools(Only part of)
     - Blocklists
         - [Blocklist.de](https://www.blocklist.de/) - Public blocklist
         - [Spamhaus](https://www.spamhaus.org/) - Public blocklist
@@ -40,7 +40,7 @@ These are not particurally for cybersecurity purpose, but still useful sources:
     - Domain expiry date
  - Publishing
     - Reports  published by security vendors
-    - Specific web sites such as [krebs on security](https://krebsonsecurity.com/), [piyokango's blog](https://piyolog.hatenadiary.jp/)
+    - Blogs of cybersecurity experts, such as [krebs on security](https://krebsonsecurity.com/), [piyokango's blog](https://piyolog.hatenadiary.jp/)
     - Media coverage
     - Social Media, especially [Twitter](https://twitter.com)
 
